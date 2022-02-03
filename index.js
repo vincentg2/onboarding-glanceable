@@ -6,12 +6,13 @@ let arrayDates = ['01/01/2021', '02/01/2021', '03/01/2021', '04/01/2021', '05/01
 
 
 // 1) code a function that sort arrayReviews in ascending order
-// const f1 = (arg) => {
-//   return arg.sort(function (a, b) {
-//     return a - b;
-//   });
-// }
-// console.log('ascending order:', f1(arrayReviews));
+
+const f1 = (arg) => {
+  return arg.sort(function (a, b) {
+    return a - b;
+  });
+}
+console.log('ascending order:', f1(arrayReviews));
 
 // 2) code a function that filter arrayReviews to have element above 30 only
 
@@ -64,16 +65,19 @@ console.log('add 78 and 87:',f6(arrayReviews));
 
 // 7) destructuring and rest: how could you get [34, 20, 8, 50], the last 4 elements of arrayReviews, in a single line of code ? 
 
+// j'ai redeclaré arrayReviews, la f1 triait le tableau bizarrement !?
+arrayReviews = [10, 35, 34, 20, 8, 50];
+
 // func
 const f7 = (arg) => {
 	const [,b, ...rest] = [...arg];
 	return rest
 }
-console.log(f7(arrayReviews));
+console.log('last 4 elements:', f7(arrayReviews));
 
 // rest
 const [,b, ...rest] = [...arrayReviews];
-console.log(rest) 
+console.log('last 4 elements:', rest) 
 
 // slice ?
-console.log(arrayReviews.slice(-4)) 
+console.log('last 4 elements:', arrayReviews.slice(-4)) 
