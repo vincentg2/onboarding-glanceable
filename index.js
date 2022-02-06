@@ -233,6 +233,12 @@ const f12 = (arg) => {
 console.log(f12(arrayDates));
 
 
+
+
+
+
+
+
 console.log('exo 13) \n')
 
 // 13) code a function that build this array programmatically
@@ -256,6 +262,12 @@ const f13 = (arg, arg2) => {
 }
 console.log(f13(arrayDates,arrayReviews))
 
+
+
+
+
+
+
 console.log('exo 14) \n')
 // 14) code a function that sort arrayNewWithReviews by reviews in ascending order
 const f14 = (arg) => {
@@ -264,6 +276,12 @@ const f14 = (arg) => {
 	});
 }
 console.log(f14(arrayNewWithReviews))
+
+
+
+
+
+
 
 console.log('exo 15) \n')
 
@@ -274,18 +292,30 @@ const f15 = (arg) => {
 }
 console.log(f15(arrayNewWithReviews))
 
+
+
+
+
+
+
 console.log('exo 16) \n')
 
-// 16) code a function with reduce that makes the sum of all element in arrayNewWithReviews with reviews above 10 
+// 16) code a function with reduce that makes the sum of all element in arrayNewWithReviews with reviews above 10 //expected output 139
 
 // comme c'est pas spécifié j'ai utilisé " strictement supérieur"
 const f16 = (arg) => {
 	return arg.reduce((prev, curr) => { return prev + (curr.reviews > 10 ? curr.reviews : 0) }, 0);
 }
-console.log(f16(arrayNewWithReviews))
+console.log(f16(arrayNewWithReviews)) 
     
     
 //     Bracket notation, dynamically create keys :
+
+
+
+
+
+
 
 
 console.log('exo 17) \n')
